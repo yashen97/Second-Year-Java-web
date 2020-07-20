@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="47b78804-61ba-4797-ab69-d4be5e0d602c">
+	<property name="ireport.zoom" value="0.6700689467654866"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM report]]>
+	</queryString>
+	<field name="AID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="CName" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Address" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="City" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="District" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="PName" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Type" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Gender" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Age" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Colour" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Decs" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Thumb" class="java.awt.Image">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="125" splitType="Stretch">
+			<rectangle>
+				<reportElement x="17" y="0" width="769" height="114" backcolor="#FFFF33" uuid="80d4b000-c1ad-49b6-8dea-cd04b576a74d"/>
+			</rectangle>
+			<elementGroup>
+				<rectangle radius="10">
+					<reportElement x="33" y="15" width="97" height="91" uuid="486c2e34-f344-482f-abc9-76c95072940d"/>
+				</rectangle>
+				<staticText>
+					<reportElement x="62" y="88" width="38" height="20" uuid="d1f4988d-4f8b-4659-a622-77499011232e"/>
+					<textElement textAlignment="Center">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[iPet SL]]></text>
+				</staticText>
+				<image>
+					<reportElement x="53" y="26" width="123" height="56" uuid="5de9d012-5948-456a-9336-c1f6060a74fa"/>
+					<imageExpression><![CDATA["D:\\iPET\\web\\public\\assets\\images\\logo.png"]]></imageExpression>
+				</image>
+			</elementGroup>
+			<staticText>
+				<reportElement x="154" y="15" width="444" height="76" forecolor="#FF0066" uuid="dab3fe0e-349d-4e81-ae4e-b2cace4873e6"/>
+				<textElement>
+					<font fontName="Comic Sans MS" size="48" isBold="true" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[iPet Sri Lanka.org]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="609" y="21" width="163" height="70" forecolor="#990099" uuid="4344ab54-ec18-498c-ab04-5f576c05ede0"/>
+				<textElement>
+					<font size="13" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[" Each and every creature on this planet has ideal to live here as much as you and I do ! "]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="89" width="194" height="20" forecolor="#6600FF" uuid="ed0423c0-e429-466e-991b-659a8824e8b0"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Paradise Island, Colombo 02]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="33" width="802" height="1" uuid="5dc36e45-5ab7-4e83-b322-f822d511b4e2"/>
+			</line>
+			<textField pattern="dd/MM/yyyy h.mm a">
+				<reportElement x="590" y="1" width="197" height="24" uuid="85cb2ba8-d506-4179-bc5e-7aeddad3612b"/>
+				<textElement textAlignment="Right">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<rectangle radius="10">
+				<reportElement x="17" y="0" width="159" height="20" backcolor="#6600CC" uuid="5bc86c59-3572-4ec9-8b77-7179e9e60835"/>
+			</rectangle>
+			<textField>
+				<reportElement x="26" y="1" width="150" height="20" forecolor="#FFFF00" uuid="faca8ec3-69dd-4e55-83a3-435ba00ce05c"/>
+				<textElement textAlignment="Center">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Appointment ID : " + $F{AID}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="395" splitType="Stretch">
+			<staticText>
+				<reportElement x="176" y="12" width="487" height="61" forecolor="#FF0099" uuid="09fe249b-aba6-4c1c-9562-68646a2a2b8e"/>
+				<textElement textAlignment="Center">
+					<font size="40" isBold="true"/>
+				</textElement>
+				<text><![CDATA[🎊 Congratulations !!! 🎉]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="223" y="86" width="196" height="20" forecolor="#990099" uuid="b3ab04af-0971-4fbc-a707-e4cd03b3a774"/>
+				<textElement>
+					<font size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Dear " + $F{CName} + " ,"]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="9" y="83" width="204" height="196" uuid="c548b3c6-5073-472b-8694-8ba5b162036d"/>
+				<imageExpression><![CDATA[$F{Thumb}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="223" y="121" width="549" height="108" uuid="5974e3d5-e2f2-4ae3-b285-093600a20c8b"/>
+				<textElement textAlignment="Justified">
+					<font size="15" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["First of all we adore your intension. We've carefully reviewed your request to adopt " + $F{PName}.toUpperCase() + " as your new pet. "
++ "It's a " + $F{Gender}.toUpperCase() + " " + $F{Type}.toUpperCase() + " of age " + $F{Age}.toUpperCase() + " and " + $F{Colour}.toUpperCase() + " colour." + 
+$F{Decs} + " Hope you and your new Pet will have a blissful life !"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="223" y="246" width="549" height="78" uuid="24638d01-7dab-4ace-a9fa-8e0355031e59"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Please be kind enough to make us a call and arrange a date to visit us (0768483690)\nWe do have an island-wide pet delivery service.\nConfirm your Address ! "]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="17" y="290" width="196" height="105" forecolor="#0099FF" backcolor="#000000" uuid="00c2de8a-4e4f-4b0c-8135-4817719d85ea"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ADDRESS\n" + $F{Address} + $F{City} + "\n" + $F{District}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="419" y="324" width="110" height="35" forecolor="#009900" uuid="ec8fd96f-f2eb-4c72-9770-533abcae0a21"/>
+				<textElement>
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Thank You ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="223" y="375" width="549" height="20" forecolor="#FFFFFF" backcolor="#000000" uuid="9fb5d3b6-54ae-4464-a989-3af2ab1b78ed"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="248" y="375" width="499" height="20" forecolor="#FFFFFF" uuid="6ca7d3ff-8ab9-407b-a4d5-fa303a88a0fa"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[© 2020, Team iPet Sri Lanka - Colombo 02 (University of Plymouth, UK)]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
