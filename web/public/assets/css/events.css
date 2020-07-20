@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Pacifico|Righteous|Roboto+Condensed|Ubuntu&display=swap');
+
+.container .col-4-lg{
+    margin-left: 5%;
+    margin-top: 5%;
+} 
+
+.card:hover{
+     -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,.75);
+     -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,.75);
+     box-shadow: -1px 9px 40px -12px rgba(0,0,0,.75);
+}
+
+h1{
+    font-family: 'Roboto Condensed';
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+.navbar-brand{
+    font-family: 'Pacifico';
+    font-size: 35px;
+    color: blue !important;
+}
+.nav-link{
+    font-size: 20px;
+    margin: 15px;
+    color: black !important;
+    font-family: 'Roboto Condensed';
+}
+.nav-link:hover{
+    color: cornflowerblue !important;
+}
+.active .nav-link{
+    color: rgb(241, 79, 30) !important;
+}
+.active .nav-link:hover{
+    color: cornflowerblue !important;
+}
+.menu-right-btn{
+    padding: 13px 46px;
+    margin-right: 4%;
+    background-color: transparent;
+    transition: all 300ms ease-in;
+}
+.menu-right-btn:hover{
+    color: white;
+    background-color: cornflowerblue !important;
+}
+
+
+  
